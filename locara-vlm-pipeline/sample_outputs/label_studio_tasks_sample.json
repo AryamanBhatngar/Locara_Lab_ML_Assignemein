@@ -1,0 +1,744 @@
+[
+  {
+    "data": {
+      "video": "/data/local-files/?d=clip_01_kitchen_pour_ideal.mp4",
+      "video_id": "114db945-c5bc-4035-ac64-76d01bdeed9b",
+      "quality_tier": "borderline",
+      "needs_review": true,
+      "hand_states_per_frame": [
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 1.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 3.0,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 4.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 6.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 9.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 11.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 13.0,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 14.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 16.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 19.467,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        }
+      ]
+    },
+    "predictions": [
+      {
+        "model_version": "offline:offline-cv-baseline",
+        "score": 0.595,
+        "result": [
+          {
+            "from_name": "viewpoint",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "optimal_head_mount_clear"
+              ]
+            },
+            "score": 0.55
+          },
+          {
+            "from_name": "left_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "right_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "bimanual_mode",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "symmetric_bimanual"
+              ]
+            },
+            "score": 0.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "video": "/data/local-files/?d=clip_02_workshop_assembly_ideal.mp4",
+      "video_id": "98ec63f1-b7c3-4edb-b86e-d5afcd5a8713",
+      "quality_tier": "borderline",
+      "needs_review": true,
+      "hand_states_per_frame": [
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 0.933,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 6.533,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 10.267,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 13.067,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 15.933,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 21.533,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 25.267,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 28.067,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 30.933,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 36.533,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 39.333,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 42.133,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        }
+      ]
+    },
+    "predictions": [
+      {
+        "model_version": "offline:offline-cv-baseline",
+        "score": 0.596,
+        "result": [
+          {
+            "from_name": "viewpoint",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "optimal_head_mount_clear"
+              ]
+            },
+            "score": 0.55
+          },
+          {
+            "from_name": "left_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "right_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "bimanual_mode",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "symmetric_bimanual"
+              ]
+            },
+            "score": 0.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "video": "/data/local-files/?d=clip_03_office_typing_usable.mp4",
+      "video_id": "acd1ba2a-5e9a-4d7f-b688-55e6bb6e030a",
+      "quality_tier": "borderline",
+      "needs_review": true,
+      "hand_states_per_frame": [
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 0.933,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 1.533,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 2.8,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 4.667,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 5.6,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 6.533,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 8.067,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 9.667,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        }
+      ]
+    },
+    "predictions": [
+      {
+        "model_version": "offline:offline-cv-baseline",
+        "score": 0.594,
+        "result": [
+          {
+            "from_name": "viewpoint",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "optimal_head_mount_clear"
+              ]
+            },
+            "score": 0.55
+          },
+          {
+            "from_name": "left_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "right_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "bimanual_mode",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "symmetric_bimanual"
+              ]
+            },
+            "score": 0.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "video": "/data/local-files/?d=clip_09_borderline_partial_occlusion.mp4",
+      "video_id": "99b90276-b58e-4990-bdb6-d110f551a9d9",
+      "quality_tier": "borderline",
+      "needs_review": true,
+      "hand_states_per_frame": [
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 1.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 6.2,
+          "left_hand": "not_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "no_hands"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 11.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 16.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 21.2,
+          "left_hand": "not_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "no_hands"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 26.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 31.2,
+          "left_hand": "not_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "no_hands"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 36.2,
+          "left_hand": "not_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "no_hands"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 41.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 46.2,
+          "left_hand": "not_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "no_hands"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 51.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 56.2,
+          "left_hand": "idle_visible",
+          "right_hand": "idle_visible",
+          "bimanual_mode": "symmetric_bimanual"
+        }
+      ]
+    },
+    "predictions": [
+      {
+        "model_version": "offline:offline-cv-baseline",
+        "score": 0.596,
+        "result": [
+          {
+            "from_name": "viewpoint",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "partial_object_occlusion"
+              ]
+            },
+            "score": 0.55
+          },
+          {
+            "from_name": "left_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "right_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "bimanual_mode",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "symmetric_bimanual"
+              ]
+            },
+            "score": 0.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "video": "/data/local-files/?d=clip_10_borderline_mild_shake.mp4",
+      "video_id": "497018a4-37b4-4ad6-927d-1804598a0a1c",
+      "quality_tier": "borderline",
+      "needs_review": true,
+      "hand_states_per_frame": [
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 2.467,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 5.8,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 8.333,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 12.467,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 15.8,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 19.133,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 21.667,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 25.0,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 29.133,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 30.8,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 35.8,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        },
+        {
+          "confidence": 0.6,
+          "needs_human_verification": true,
+          "time_sec": 38.333,
+          "left_hand": "idle_visible",
+          "right_hand": "not_visible",
+          "bimanual_mode": "unimanual_left"
+        }
+      ]
+    },
+    "predictions": [
+      {
+        "model_version": "offline:offline-cv-baseline",
+        "score": 0.596,
+        "result": [
+          {
+            "from_name": "viewpoint",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "optimal_head_mount_clear"
+              ]
+            },
+            "score": 0.55
+          },
+          {
+            "from_name": "left_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "idle_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "right_hand",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "not_visible"
+              ]
+            },
+            "score": 0.6
+          },
+          {
+            "from_name": "bimanual_mode",
+            "to_name": "video",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "unimanual_left"
+              ]
+            },
+            "score": 0.6
+          }
+        ]
+      }
+    ]
+  }
+]

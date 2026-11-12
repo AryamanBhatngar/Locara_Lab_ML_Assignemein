@@ -1,0 +1,18 @@
+# Core
+numpy==2.2.6; python_version < "3.11"
+numpy==2.4.6; python_version == "3.11"
+numpy==2.5.3; python_version >= "3.12"
+opencv-python-headless==5.0.0.93
+pydantic==2.13.5
+# VLM providers (only the one you use needs to work)
+google-genai==2.33.0; python_version < "3.11"
+google-genai==3.0.0; python_version >= "3.11"
+openai==3.46.0
+# S3 inputs
+boto3==1.43.125
+botocore==1.43.125
+# Tests
+httpx2==2.14.0
+moto[s3]==5.2.5
+psutil==7.2.2
+pytest==9.2.0

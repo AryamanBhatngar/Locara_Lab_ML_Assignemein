@@ -1,0 +1,142 @@
+{
+  "clip_01_kitchen_pour_ideal.mp4": {
+    "tier": "usable",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 5,
+      "scene_diversity": 4,
+      "hand_visibility": 5,
+      "lighting_exposure": 5,
+      "duplicate_risk": 0,
+      "overall_usability": 5
+    },
+    "duration_sec": 20,
+    "notes": "Head-mounted view, two hands working, bright and stable."
+  },
+  "clip_02_workshop_assembly_ideal.mp4": {
+    "tier": "usable",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 5,
+      "scene_diversity": 5,
+      "hand_visibility": 5,
+      "lighting_exposure": 5,
+      "duplicate_risk": 0,
+      "overall_usability": 5
+    },
+    "duration_sec": 45,
+    "notes": "Busy workbench, two hands, stable."
+  },
+  "clip_03_office_typing_usable.mp4": {
+    "tier": "usable",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 4,
+      "scene_diversity": 3,
+      "hand_visibility": 4,
+      "lighting_exposure": 4,
+      "duplicate_risk": 0,
+      "overall_usability": 4
+    },
+    "duration_sec": 10,
+    "notes": "Short desk clip, good exposure."
+  },
+  "clip_04_severe_motion_blur.mp4": {
+    "tier": "reject",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 1,
+      "scene_diversity": 3,
+      "hand_visibility": 3,
+      "lighting_exposure": 4,
+      "duplicate_risk": 0,
+      "overall_usability": 1
+    },
+    "duration_sec": 15,
+    "notes": "Whip pans and directional blur in most frames."
+  },
+  "clip_05_underexposed_dark.mp4": {
+    "tier": "reject",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 3,
+      "scene_diversity": 2,
+      "hand_visibility": 2,
+      "lighting_exposure": 1,
+      "duplicate_risk": 0,
+      "overall_usability": 1
+    },
+    "duration_sec": 12,
+    "notes": "Nearly black frames."
+  },
+  "clip_06_static_tripod_non_ego.mp4": {
+    "tier": "reject",
+    "scores": {
+      "egocentric_framing": 0,
+      "motion_quality": 4,
+      "scene_diversity": 3,
+      "hand_visibility": 1,
+      "lighting_exposure": 5,
+      "duplicate_risk": 0,
+      "overall_usability": 1
+    },
+    "duration_sec": 30,
+    "notes": "Fixed camera watching a person from across the room."
+  },
+  "clip_07_no_hands_visible.mp4": {
+    "tier": "reject",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 3,
+      "scene_diversity": 1,
+      "hand_visibility": 1,
+      "lighting_exposure": 4,
+      "duplicate_risk": 0,
+      "overall_usability": 1
+    },
+    "duration_sec": 25,
+    "notes": "Walking, looking at walls."
+  },
+  "clip_08_duplicate_of_clip_01.mp4": {
+    "tier": "reject",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 5,
+      "scene_diversity": 4,
+      "hand_visibility": 5,
+      "lighting_exposure": 5,
+      "duplicate_risk": 1,
+      "overall_usability": 1
+    },
+    "duration_sec": 20,
+    "notes": "Re-encoded, rescaled copy of clip 01."
+  },
+  "clip_09_borderline_partial_occlusion.mp4": {
+    "tier": "borderline",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 4,
+      "scene_diversity": 4,
+      "hand_visibility": 3,
+      "lighting_exposure": 3,
+      "duplicate_risk": 0,
+      "overall_usability": 3
+    },
+    "duration_sec": 60,
+    "notes": "Hands leave the frame half the time; dim."
+  },
+  "clip_10_borderline_mild_shake.mp4": {
+    "tier": "borderline",
+    "scores": {
+      "egocentric_framing": 1,
+      "motion_quality": 3,
+      "scene_diversity": 4,
+      "hand_visibility": 4,
+      "lighting_exposure": 4,
+      "duplicate_risk": 0,
+      "overall_usability": 3
+    },
+    "duration_sec": 40,
+    "notes": "One hand, moderate jitter."
+  }
+}

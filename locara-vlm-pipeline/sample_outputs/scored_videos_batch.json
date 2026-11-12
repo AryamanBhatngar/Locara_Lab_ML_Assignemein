@@ -1,0 +1,981 @@
+[
+  {
+    "video_id": "114db945-c5bc-4035-ac64-76d01bdeed9b",
+    "processed_at": "2026-11-07T19:21:32Z",
+    "frame_count_sampled": 10,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.01, camera motion 0.11%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 5,
+        "reasoning": "Offline rule: sharpness 181, jitter 0.12%, all motion 0.45%.",
+        "confidence": 0.69
+      },
+      "scene_diversity": {
+        "score": 3,
+        "reasoning": "Offline rule: edge density 0.058 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.65
+      },
+      "hand_visibility": {
+        "score": 5,
+        "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 148, under 0%, over 0%, flicker 0.01.",
+        "confidence": 0.81
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 5,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.66
+      }
+    },
+    "tier": "borderline",
+    "tier_confidence": 0.73,
+    "meta": {
+      "source": "data/synthetic/clip_01_kitchen_pour_ideal.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 20.0,
+      "frame_times_sec": [
+        1.467,
+        3.0,
+        4.467,
+        6.467,
+        9.467,
+        11.467,
+        13.0,
+        14.467,
+        16.467,
+        19.467
+      ],
+      "composite_score": 4.7,
+      "hard_gates_failed": [],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": null,
+      "telemetry": {
+        "laplacian_var_median": 181.3,
+        "laplacian_var_min": 163.13,
+        "flow_mean_pct": 0.453,
+        "camera_motion_pct": 0.108,
+        "flow_jitter_pct": 0.125,
+        "static_ratio": 0.014,
+        "frame_diff_mean": 3.861,
+        "brightness_mean": 148.31,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0099,
+        "skin_ratio_lower": 0.1766,
+        "hand_presence_frac": 1.0,
+        "edge_density": 0.0582,
+        "telemetry_frames": 75.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 801.4,
+        "telemetry": 675.4,
+        "total": 1476.8,
+        "scoring": 4.9
+      }
+    }
+  },
+  {
+    "video_id": "98ec63f1-b7c3-4edb-b86e-d5afcd5a8713",
+    "processed_at": "2026-11-07T19:21:33Z",
+    "frame_count_sampled": 12,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.02, camera motion 0.20%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 5,
+        "reasoning": "Offline rule: sharpness 361, jitter 0.21%, all motion 0.60%.",
+        "confidence": 0.93
+      },
+      "scene_diversity": {
+        "score": 3,
+        "reasoning": "Offline rule: edge density 0.068 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.53
+      },
+      "hand_visibility": {
+        "score": 5,
+        "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 149, under 0%, over 0%, flicker 0.01.",
+        "confidence": 0.82
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 5,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.66
+      }
+    },
+    "tier": "borderline",
+    "tier_confidence": 0.75,
+    "meta": {
+      "source": "data/synthetic/clip_02_workshop_assembly_ideal.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 45.0,
+      "frame_times_sec": [
+        0.933,
+        6.533,
+        10.267,
+        13.067,
+        15.933,
+        21.533,
+        25.267,
+        28.067,
+        30.933,
+        36.533,
+        39.333,
+        42.133
+      ],
+      "composite_score": 4.7,
+      "hard_gates_failed": [],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 13.5,
+      "telemetry": {
+        "laplacian_var_median": 361.05,
+        "laplacian_var_min": 293.6,
+        "flow_mean_pct": 0.601,
+        "camera_motion_pct": 0.195,
+        "flow_jitter_pct": 0.209,
+        "static_ratio": 0.024,
+        "frame_diff_mean": 5.721,
+        "brightness_mean": 149.09,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0103,
+        "skin_ratio_lower": 0.1779,
+        "hand_presence_frac": 1.0,
+        "edge_density": 0.0676,
+        "telemetry_frames": 169.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 1226.2,
+        "telemetry": 1424.2,
+        "total": 2650.4,
+        "scoring": 0.4
+      }
+    }
+  },
+  {
+    "video_id": "acd1ba2a-5e9a-4d7f-b688-55e6bb6e030a",
+    "processed_at": "2026-11-07T19:21:33Z",
+    "frame_count_sampled": 8,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.00, camera motion 0.29%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 5,
+        "reasoning": "Offline rule: sharpness 399, jitter 0.31%, all motion 0.71%.",
+        "confidence": 0.71
+      },
+      "scene_diversity": {
+        "score": 4,
+        "reasoning": "Offline rule: edge density 0.099 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.51
+      },
+      "hand_visibility": {
+        "score": 5,
+        "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 124, under 0%, over 0%, flicker 0.01.",
+        "confidence": 0.62
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 5,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.62
+      }
+    },
+    "tier": "borderline",
+    "tier_confidence": 0.67,
+    "meta": {
+      "source": "data/synthetic/clip_03_office_typing_usable.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 10.0,
+      "frame_times_sec": [
+        0.933,
+        1.533,
+        2.8,
+        4.667,
+        5.6,
+        6.533,
+        8.067,
+        9.667
+      ],
+      "composite_score": 4.85,
+      "hard_gates_failed": [],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 12.0,
+      "telemetry": {
+        "laplacian_var_median": 398.82,
+        "laplacian_var_min": 356.56,
+        "flow_mean_pct": 0.715,
+        "camera_motion_pct": 0.295,
+        "flow_jitter_pct": 0.306,
+        "static_ratio": 0.0,
+        "frame_diff_mean": 5.991,
+        "brightness_mean": 124.43,
+        "under_exposed_ratio": 0.0004,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0142,
+        "skin_ratio_lower": 0.1792,
+        "hand_presence_frac": 1.0,
+        "edge_density": 0.0987,
+        "telemetry_frames": 38.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 581.0,
+        "telemetry": 483.3,
+        "total": 1064.4,
+        "scoring": 0.3
+      }
+    }
+  },
+  {
+    "video_id": "c3175dcd-05aa-4b1e-bb06-a55350bb7356",
+    "processed_at": "2026-11-07T19:21:33Z",
+    "frame_count_sampled": 9,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.00, camera motion 0.55%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 1,
+        "reasoning": "Offline rule: sharpness 311, jitter 0.94%, all motion 6.88%.",
+        "confidence": 0.66
+      },
+      "scene_diversity": {
+        "score": 4,
+        "reasoning": "Offline rule: edge density 0.084 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.65
+      },
+      "hand_visibility": {
+        "score": 5,
+        "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 160, under 0%, over 0%, flicker 0.03.",
+        "confidence": 0.91
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 3,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.66
+      }
+    },
+    "tier": "reject",
+    "tier_confidence": 0.66,
+    "meta": {
+      "source": "data/synthetic/clip_04_severe_motion_blur.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 15.0,
+      "frame_times_sec": [
+        0.8,
+        2.867,
+        4.533,
+        6.2,
+        7.467,
+        9.133,
+        10.8,
+        12.467,
+        13.733
+      ],
+      "composite_score": 3.65,
+      "hard_gates_failed": [
+        "motion_quality"
+      ],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 12.0,
+      "telemetry": {
+        "laplacian_var_median": 311.0,
+        "laplacian_var_min": 191.22,
+        "flow_mean_pct": 6.875,
+        "camera_motion_pct": 0.55,
+        "flow_jitter_pct": 0.941,
+        "static_ratio": 0.0,
+        "frame_diff_mean": 20.539,
+        "brightness_mean": 160.49,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0254,
+        "skin_ratio_lower": 0.2048,
+        "hand_presence_frac": 1.0,
+        "edge_density": 0.0836,
+        "telemetry_frames": 57.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 676.6,
+        "telemetry": 539.2,
+        "total": 1215.8,
+        "scoring": 0.4
+      }
+    }
+  },
+  {
+    "video_id": "e14f2f19-e7f5-4b95-9fbd-48005d87b13e",
+    "processed_at": "2026-11-07T19:21:34Z",
+    "frame_count_sampled": 8,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.50, camera motion 0.01%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.5
+      },
+      "motion_quality": {
+        "score": 1,
+        "reasoning": "Offline rule: sharpness 4, jitter 0.01%, all motion 0.12%.",
+        "confidence": 0.95
+      },
+      "scene_diversity": {
+        "score": 1,
+        "reasoning": "Offline rule: edge density 0.000 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.95
+      },
+      "hand_visibility": {
+        "score": 1,
+        "reasoning": "Offline rule: likely hands in 0% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.95
+      },
+      "lighting_exposure": {
+        "score": 1,
+        "reasoning": "Offline rule: brightness 18, under 100%, over 0%, flicker 0.01.",
+        "confidence": 0.72
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 1,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.72
+      }
+    },
+    "tier": "reject",
+    "tier_confidence": 0.95,
+    "meta": {
+      "source": "data/synthetic/clip_05_underexposed_dark.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 12.0,
+      "frame_times_sec": [
+        0.333,
+        2.6,
+        3.333,
+        4.867,
+        7.067,
+        8.6,
+        9.333,
+        10.867
+      ],
+      "composite_score": 1.0,
+      "hard_gates_failed": [
+        "hand_visibility",
+        "motion_quality",
+        "lighting_exposure"
+      ],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 11.0,
+      "telemetry": {
+        "laplacian_var_median": 4.08,
+        "laplacian_var_min": 3.46,
+        "flow_mean_pct": 0.115,
+        "camera_motion_pct": 0.015,
+        "flow_jitter_pct": 0.015,
+        "static_ratio": 0.5,
+        "frame_diff_mean": 0.953,
+        "brightness_mean": 18.13,
+        "under_exposed_ratio": 0.9999,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0108,
+        "skin_ratio_lower": 0.0158,
+        "hand_presence_frac": 0.0,
+        "edge_density": 0.0,
+        "telemetry_frames": 45.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 495.2,
+        "telemetry": 418.7,
+        "total": 913.9,
+        "scoring": 0.4
+      }
+    }
+  },
+  {
+    "video_id": "e2918d0e-a648-4e84-afa1-d0bc19aed067",
+    "processed_at": "2026-11-07T19:21:35Z",
+    "frame_count_sampled": 12,
+    "scores": {
+      "egocentric_framing": {
+        "score": 0.0,
+        "reasoning": "Offline rule: static ratio 0.86, camera motion 0.00%; fixed camera, not head-mounted.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 5,
+        "reasoning": "Offline rule: sharpness 330, jitter 0.00%, all motion 0.10%.",
+        "confidence": 0.95
+      },
+      "scene_diversity": {
+        "score": 5,
+        "reasoning": "Offline rule: edge density 0.113 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.62
+      },
+      "hand_visibility": {
+        "score": 1,
+        "reasoning": "Offline rule: likely hands in 0% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.95
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 145, under 0%, over 0%, flicker 0.00.",
+        "confidence": 0.79
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 1,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.79
+      }
+    },
+    "tier": "reject",
+    "tier_confidence": 0.95,
+    "meta": {
+      "source": "data/synthetic/clip_06_static_tripod_non_ego.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 30.0,
+      "frame_times_sec": [
+        0.6,
+        4.333,
+        6.867,
+        8.067,
+        10.6,
+        14.333,
+        16.867,
+        18.067,
+        21.2,
+        24.333,
+        25.6,
+        28.733
+      ],
+      "composite_score": 3.4,
+      "hard_gates_failed": [
+        "egocentric_framing",
+        "hand_visibility"
+      ],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 23.5,
+      "telemetry": {
+        "laplacian_var_median": 330.31,
+        "laplacian_var_min": 325.91,
+        "flow_mean_pct": 0.096,
+        "camera_motion_pct": 0.0,
+        "flow_jitter_pct": 0.0,
+        "static_ratio": 0.857,
+        "frame_diff_mean": 0.666,
+        "brightness_mean": 144.84,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0001,
+        "skin_ratio_lower": 0.0,
+        "hand_presence_frac": 0.0,
+        "edge_density": 0.1133,
+        "telemetry_frames": 113.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 680.3,
+        "telemetry": 710.9,
+        "total": 1391.2,
+        "scoring": 0.3
+      }
+    }
+  },
+  {
+    "video_id": "94fc20e8-7d31-4135-959b-16b73bbf1557",
+    "processed_at": "2026-11-07T19:21:35Z",
+    "frame_count_sampled": 11,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 1.00, camera motion 0.00%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.5
+      },
+      "motion_quality": {
+        "score": 1,
+        "reasoning": "Offline rule: sharpness 12, jitter 0.00%, all motion 0.00%.",
+        "confidence": 0.86
+      },
+      "scene_diversity": {
+        "score": 1,
+        "reasoning": "Offline rule: edge density 0.000 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.95
+      },
+      "hand_visibility": {
+        "score": 1,
+        "reasoning": "Offline rule: likely hands in 0% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.95
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 203, under 0%, over 0%, flicker 0.00.",
+        "confidence": 0.95
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 1,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.86
+      }
+    },
+    "tier": "reject",
+    "tier_confidence": 0.95,
+    "meta": {
+      "source": "data/synthetic/clip_07_no_hands_visible.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 25.0,
+      "frame_times_sec": [
+        0.533,
+        3.933,
+        5.667,
+        8.467,
+        10.733,
+        13.067,
+        14.733,
+        16.467,
+        19.867,
+        21.0,
+        24.4
+      ],
+      "composite_score": 1.8,
+      "hard_gates_failed": [
+        "hand_visibility",
+        "motion_quality"
+      ],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 20.0,
+      "telemetry": {
+        "laplacian_var_median": 11.98,
+        "laplacian_var_min": 6.69,
+        "flow_mean_pct": 0.003,
+        "camera_motion_pct": 0.0,
+        "flow_jitter_pct": 0.001,
+        "static_ratio": 1.0,
+        "frame_diff_mean": 0.797,
+        "brightness_mean": 202.76,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0002,
+        "skin_ratio_lower": 0.0,
+        "hand_presence_frac": 0.0,
+        "edge_density": 0.0,
+        "telemetry_frames": 94.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 735.2,
+        "telemetry": 787.2,
+        "total": 1522.4,
+        "scoring": 0.3
+      }
+    }
+  },
+  {
+    "video_id": "7b742130-e6ca-47df-b939-a8e8d77a32ff",
+    "processed_at": "2026-11-07T19:21:35Z",
+    "frame_count_sampled": 10,
+    "scores": {
+      "egocentric_framing": {
+        "score": 0.0,
+        "reasoning": "Offline rule: static ratio 0.04, camera motion 0.03%; fixed camera, not head-mounted.",
+        "confidence": 0.64
+      },
+      "motion_quality": {
+        "score": 4,
+        "reasoning": "Offline rule: sharpness 88, jitter 0.03%, all motion 0.43%.",
+        "confidence": 0.59
+      },
+      "scene_diversity": {
+        "score": 3,
+        "reasoning": "Offline rule: edge density 0.058 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.65
+      },
+      "hand_visibility": {
+        "score": 5,
+        "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 153, under 0%, over 0%, flicker 0.01.",
+        "confidence": 0.85
+      },
+      "duplicate_risk": {
+        "score": 1.0,
+        "reasoning": "Perceptual hash matches clip 114db945-c5bc-4035-ac64-76d01bdeed9b (median Hamming 2/64). Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.95
+      },
+      "overall_usability": {
+        "score": 1,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.59
+      }
+    },
+    "tier": "reject",
+    "tier_confidence": 0.95,
+    "meta": {
+      "source": "data/synthetic/clip_08_duplicate_of_clip_01.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 20.0,
+      "frame_times_sec": [
+        1.467,
+        3.0,
+        4.467,
+        6.467,
+        9.467,
+        11.467,
+        13.0,
+        14.467,
+        16.467,
+        19.467
+      ],
+      "composite_score": 4.05,
+      "hard_gates_failed": [
+        "egocentric_framing",
+        "duplicate_risk"
+      ],
+      "cv_disagreements": [],
+      "duplicate_of": "114db945-c5bc-4035-ac64-76d01bdeed9b",
+      "nearest_hash_distance": 2.0,
+      "telemetry": {
+        "laplacian_var_median": 88.02,
+        "laplacian_var_min": 62.74,
+        "flow_mean_pct": 0.435,
+        "camera_motion_pct": 0.026,
+        "flow_jitter_pct": 0.03,
+        "static_ratio": 0.041,
+        "frame_diff_mean": 3.523,
+        "brightness_mean": 152.74,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0096,
+        "skin_ratio_lower": 0.179,
+        "hand_presence_frac": 1.0,
+        "edge_density": 0.0584,
+        "telemetry_frames": 75.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 725.9,
+        "telemetry": 639.5,
+        "total": 1365.4,
+        "scoring": 0.4
+      }
+    }
+  },
+  {
+    "video_id": "99b90276-b58e-4990-bdb6-d110f551a9d9",
+    "processed_at": "2026-11-07T19:21:35Z",
+    "frame_count_sampled": 12,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.04, camera motion 0.26%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 5,
+        "reasoning": "Offline rule: sharpness 156, jitter 0.27%, all motion 0.46%.",
+        "confidence": 0.54
+      },
+      "scene_diversity": {
+        "score": 5,
+        "reasoning": "Offline rule: edge density 0.102 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.52
+      },
+      "hand_visibility": {
+        "score": 3,
+        "reasoning": "Offline rule: likely hands in 53% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 3,
+        "reasoning": "Offline rule: brightness 89, under 0%, over 0%, flicker 0.03.",
+        "confidence": 0.51
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 4,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.51
+      }
+    },
+    "tier": "borderline",
+    "tier_confidence": 0.51,
+    "meta": {
+      "source": "data/synthetic/clip_09_borderline_partial_occlusion.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 60.0,
+      "frame_times_sec": [
+        1.2,
+        6.2,
+        11.2,
+        16.2,
+        21.2,
+        26.2,
+        31.2,
+        36.2,
+        41.2,
+        46.2,
+        51.2,
+        56.2
+      ],
+      "composite_score": 3.9,
+      "hard_gates_failed": [],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 11.0,
+      "telemetry": {
+        "laplacian_var_median": 155.94,
+        "laplacian_var_min": 149.97,
+        "flow_mean_pct": 0.456,
+        "camera_motion_pct": 0.263,
+        "flow_jitter_pct": 0.272,
+        "static_ratio": 0.04,
+        "frame_diff_mean": 4.711,
+        "brightness_mean": 88.98,
+        "under_exposed_ratio": 0.0017,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0282,
+        "skin_ratio_lower": 0.0926,
+        "hand_presence_frac": 0.533,
+        "edge_density": 0.1019,
+        "telemetry_frames": 225.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 1336.8,
+        "telemetry": 1767.8,
+        "total": 3104.6,
+        "scoring": 0.3
+      }
+    }
+  },
+  {
+    "video_id": "497018a4-37b4-4ad6-927d-1804598a0a1c",
+    "processed_at": "2026-11-07T19:21:35Z",
+    "frame_count_sampled": 12,
+    "scores": {
+      "egocentric_framing": {
+        "score": 1.0,
+        "reasoning": "Offline rule: static ratio 0.00, camera motion 0.23%; camera moves continuously, consistent with head mount.",
+        "confidence": 0.91
+      },
+      "motion_quality": {
+        "score": 5,
+        "reasoning": "Offline rule: sharpness 284, jitter 0.36%, all motion 1.13%.",
+        "confidence": 0.59
+      },
+      "scene_diversity": {
+        "score": 3,
+        "reasoning": "Offline rule: edge density 0.063 as a clutter proxy; cannot judge across locations.",
+        "confidence": 0.59
+      },
+      "hand_visibility": {
+        "score": 5,
+        "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame).",
+        "confidence": 0.66
+      },
+      "lighting_exposure": {
+        "score": 5,
+        "reasoning": "Offline rule: brightness 159, under 0%, over 0%, flicker 0.01.",
+        "confidence": 0.9
+      },
+      "duplicate_risk": {
+        "score": 0.0,
+        "reasoning": "Offline rule: set by the perceptual-hash registry.",
+        "confidence": 0.72
+      },
+      "overall_usability": {
+        "score": 5,
+        "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower.",
+        "confidence": 0.59
+      }
+    },
+    "tier": "borderline",
+    "tier_confidence": 0.71,
+    "meta": {
+      "source": "data/synthetic/clip_10_borderline_mild_shake.mp4",
+      "provider": "offline",
+      "model": "offline-cv-baseline",
+      "prompt_version": null,
+      "duration_sec": 40.0,
+      "frame_times_sec": [
+        2.467,
+        5.8,
+        8.333,
+        12.467,
+        15.8,
+        19.133,
+        21.667,
+        25.0,
+        29.133,
+        30.8,
+        35.8,
+        38.333
+      ],
+      "composite_score": 4.7,
+      "hard_gates_failed": [],
+      "cv_disagreements": [],
+      "duplicate_of": null,
+      "nearest_hash_distance": 14.5,
+      "telemetry": {
+        "laplacian_var_median": 284.37,
+        "laplacian_var_min": 174.81,
+        "flow_mean_pct": 1.128,
+        "camera_motion_pct": 0.235,
+        "flow_jitter_pct": 0.36,
+        "static_ratio": 0.0,
+        "frame_diff_mean": 7.021,
+        "brightness_mean": 158.57,
+        "under_exposed_ratio": 0.0,
+        "over_exposed_ratio": 0.0,
+        "flicker_cv": 0.0116,
+        "skin_ratio_lower": 0.0884,
+        "hand_presence_frac": 1.0,
+        "edge_density": 0.0633,
+        "telemetry_frames": 150.0
+      },
+      "usage": {
+        "latency_ms": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "timings_ms": {
+        "decode_sample": 989.5,
+        "telemetry": 1201.2,
+        "total": 2190.7,
+        "scoring": 0.2
+      }
+    }
+  }
+]

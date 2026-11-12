@@ -1,0 +1,98 @@
+<!-- Label Studio review interface for Locara ego-centric pre-annotations.
+     Generated from src/schemas/taxonomy_schema.py (taxonomy v1.0.0); tests check they match.
+     Requires a Label Studio version with TimelineLabels (video action segments). -->
+<View>
+  <Header value="Video $video_id  |  quality tier: $quality_tier"/>
+  <Video name="video" value="$video" framerate="30"/>
+
+  <Header value="Actions (drag on the timeline to mark start and end)"/>
+  <TimelineLabels name="actions" toName="video">
+    <Label value="reach"/>
+    <Label value="grasp"/>
+    <Label value="pick_up"/>
+    <Label value="move_transport"/>
+    <Label value="place"/>
+    <Label value="pour"/>
+    <Label value="open"/>
+    <Label value="close"/>
+    <Label value="push_pull"/>
+    <Label value="cut_slice"/>
+    <Label value="wipe_clean"/>
+    <Label value="stir_mix"/>
+    <Label value="type_press"/>
+    <Label value="assemble_insert"/>
+    <Label value="hand_over"/>
+    <Label value="walk_navigate"/>
+    <Label value="idle"/>
+  </TimelineLabels>
+
+  <Header value="Objects (draw a box on the frame where the object is handled)"/>
+  <Labels name="objects" toName="video">
+    <Label value="rigid_tool"/>
+    <Label value="container"/>
+    <Label value="articulated_fixture"/>
+    <Label value="deformable_cloth"/>
+    <Label value="food_item"/>
+    <Label value="electronics"/>
+    <Label value="utensil"/>
+    <Label value="fastener_part"/>
+    <Label value="other"/>
+  </Labels>
+  <VideoRectangle name="box" toName="video"/>
+
+  <Header value="Scene"/>
+  <Choices name="scene" toName="video" choice="single" required="true">
+    <Choice value="home_kitchen"/>
+    <Choice value="mechanical_workshop"/>
+    <Choice value="office_desk"/>
+    <Choice value="warehouse_packing"/>
+    <Choice value="laundry_utility"/>
+    <Choice value="living_room"/>
+    <Choice value="outdoor_courtyard"/>
+    <Choice value="other"/>
+  </Choices>
+
+  <Header value="Hands (wearer's own hands)"/>
+  <Choices name="left_hand" toName="video" choice="single">
+    <Choice value="power_grasp"/>
+    <Choice value="precision_pinch"/>
+    <Choice value="pointing_pressing"/>
+    <Choice value="supporting_stabilizing"/>
+    <Choice value="open_reaching"/>
+    <Choice value="idle_visible"/>
+    <Choice value="not_visible"/>
+  </Choices>
+  <Choices name="right_hand" toName="video" choice="single">
+    <Choice value="power_grasp"/>
+    <Choice value="precision_pinch"/>
+    <Choice value="pointing_pressing"/>
+    <Choice value="supporting_stabilizing"/>
+    <Choice value="open_reaching"/>
+    <Choice value="idle_visible"/>
+    <Choice value="not_visible"/>
+  </Choices>
+  <Choices name="bimanual_mode" toName="video" choice="single">
+    <Choice value="unimanual_left"/>
+    <Choice value="unimanual_right"/>
+    <Choice value="symmetric_bimanual"/>
+    <Choice value="asymmetric_bimanual_hold_and_act"/>
+    <Choice value="no_hands"/>
+  </Choices>
+
+  <Header value="Viewpoint quality"/>
+  <Choices name="viewpoint" toName="video" choice="single" required="true">
+    <Choice value="optimal_head_mount_clear"/>
+    <Choice value="minor_hand_self_occlusion"/>
+    <Choice value="partial_object_occlusion"/>
+    <Choice value="extreme_angle_tilt"/>
+    <Choice value="heavy_occlusion_unusable"/>
+  </Choices>
+
+  <Header value="Clip verdict"/>
+  <Choices name="qc_verdict" toName="video" choice="single" required="true">
+    <Choice value="accept"/>
+    <Choice value="accept_with_corrections"/>
+    <Choice value="reject_unusable"/>
+  </Choices>
+  <TextArea name="notes" toName="video" placeholder="What did the pre-labels get wrong?" rows="2"/>
+</View>

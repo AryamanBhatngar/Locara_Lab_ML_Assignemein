@@ -1,0 +1,405 @@
+{
+  "evaluated_clips": 10,
+  "scorer": {
+    "offline:offline-cv-baseline": 10
+  },
+  "positive_class": "defect (1-5 dims <= 2; framing = 0; duplicate >= 0.5)",
+  "per_dimension": {
+    "egocentric_framing": {
+      "n": 10,
+      "positives_in_truth": 1,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "tn": 8,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.667,
+      "exact_match": 0.9
+    },
+    "motion_quality": {
+      "n": 10,
+      "positives_in_truth": 1,
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "tn": 7,
+      "precision": 0.333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "exact_match": 0.3,
+      "within_1": 0.7,
+      "mae": 1.0
+    },
+    "scene_diversity": {
+      "n": 10,
+      "positives_in_truth": 2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": 0.1,
+      "within_1": 0.8,
+      "mae": 1.1
+    },
+    "hand_visibility": {
+      "n": 10,
+      "positives_in_truth": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": 0.6,
+      "within_1": 0.9,
+      "mae": 0.5
+    },
+    "lighting_exposure": {
+      "n": 10,
+      "positives_in_truth": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": 0.6,
+      "within_1": 1.0,
+      "mae": 0.4
+    },
+    "duplicate_risk": {
+      "n": 10,
+      "positives_in_truth": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": 1.0
+    },
+    "overall_usability": {
+      "n": 10,
+      "positives_in_truth": 5,
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 5,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.889,
+      "exact_match": 0.6,
+      "within_1": 0.8,
+      "mae": 0.6
+    }
+  },
+  "tier": {
+    "accuracy": 0.7,
+    "confusion_matrix_truth_rows": {
+      "usable": {
+        "usable": 0,
+        "borderline": 3,
+        "reject": 0
+      },
+      "borderline": {
+        "usable": 0,
+        "borderline": 2,
+        "reject": 0
+      },
+      "reject": {
+        "usable": 0,
+        "borderline": 0,
+        "reject": 5
+      }
+    },
+    "reject_detection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "auto_accept_precision": null,
+    "auto_accepted": 0,
+    "sent_to_review": 5
+  },
+  "tier_errors": [
+    {
+      "clip": "clip_01_kitchen_pour_ideal.mp4",
+      "predicted": "borderline",
+      "truth": "usable",
+      "composite": 4.7,
+      "hard_gates_failed": []
+    },
+    {
+      "clip": "clip_02_workshop_assembly_ideal.mp4",
+      "predicted": "borderline",
+      "truth": "usable",
+      "composite": 4.7,
+      "hard_gates_failed": []
+    },
+    {
+      "clip": "clip_03_office_typing_usable.mp4",
+      "predicted": "borderline",
+      "truth": "usable",
+      "composite": 4.85,
+      "hard_gates_failed": []
+    }
+  ],
+  "failures": [
+    {
+      "clip": "clip_08_duplicate_of_clip_01.mp4",
+      "dimension": "egocentric_framing",
+      "predicted": 0.0,
+      "truth": 1,
+      "type": "false_positive",
+      "reasoning": "Offline rule: static ratio 0.04, camera motion 0.03%; fixed camera, not head-mounted."
+    },
+    {
+      "clip": "clip_05_underexposed_dark.mp4",
+      "dimension": "motion_quality",
+      "predicted": 1,
+      "truth": 3,
+      "type": "false_positive",
+      "reasoning": "Offline rule: sharpness 4, jitter 0.01%, all motion 0.12%."
+    },
+    {
+      "clip": "clip_07_no_hands_visible.mp4",
+      "dimension": "motion_quality",
+      "predicted": 1,
+      "truth": 3,
+      "type": "false_positive",
+      "reasoning": "Offline rule: sharpness 12, jitter 0.00%, all motion 0.00%."
+    },
+    {
+      "clip": "clip_10_borderline_mild_shake.mp4",
+      "dimension": "motion_quality",
+      "predicted": 5,
+      "truth": 3,
+      "type": "off_by_2+",
+      "reasoning": "Offline rule: sharpness 284, jitter 0.36%, all motion 1.13%."
+    },
+    {
+      "clip": "clip_02_workshop_assembly_ideal.mp4",
+      "dimension": "scene_diversity",
+      "predicted": 3,
+      "truth": 5,
+      "type": "off_by_2+",
+      "reasoning": "Offline rule: edge density 0.068 as a clutter proxy; cannot judge across locations."
+    },
+    {
+      "clip": "clip_06_static_tripod_non_ego.mp4",
+      "dimension": "scene_diversity",
+      "predicted": 5,
+      "truth": 3,
+      "type": "off_by_2+",
+      "reasoning": "Offline rule: edge density 0.113 as a clutter proxy; cannot judge across locations."
+    },
+    {
+      "clip": "clip_04_severe_motion_blur.mp4",
+      "dimension": "hand_visibility",
+      "predicted": 5,
+      "truth": 3,
+      "type": "off_by_2+",
+      "reasoning": "Offline rule: likely hands in 100% of moments (skin-tone proxy, lower frame)."
+    },
+    {
+      "clip": "clip_04_severe_motion_blur.mp4",
+      "dimension": "overall_usability",
+      "predicted": 3,
+      "truth": 1,
+      "type": "false_negative",
+      "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower."
+    },
+    {
+      "clip": "clip_10_borderline_mild_shake.mp4",
+      "dimension": "overall_usability",
+      "predicted": 5,
+      "truth": 3,
+      "type": "off_by_2+",
+      "reasoning": "Offline rule: rounded mean of hands, motion and lighting, minus 1 if any is 2 or lower."
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "composite_min": 3.25,
+      "confidence_min": 0.5,
+      "auto_accepted": 5,
+      "auto_accept_precision": 0.6,
+      "review_share": 0.0
+    },
+    {
+      "composite_min": 3.25,
+      "confidence_min": 0.6,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 3.25,
+      "confidence_min": 0.7,
+      "auto_accepted": 3,
+      "auto_accept_precision": 0.667,
+      "review_share": 0.2
+    },
+    {
+      "composite_min": 3.25,
+      "confidence_min": 0.8,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 3.25,
+      "confidence_min": 0.9,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 3.5,
+      "confidence_min": 0.5,
+      "auto_accepted": 5,
+      "auto_accept_precision": 0.6,
+      "review_share": 0.0
+    },
+    {
+      "composite_min": 3.5,
+      "confidence_min": 0.6,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 3.5,
+      "confidence_min": 0.7,
+      "auto_accepted": 3,
+      "auto_accept_precision": 0.667,
+      "review_share": 0.2
+    },
+    {
+      "composite_min": 3.5,
+      "confidence_min": 0.8,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 3.5,
+      "confidence_min": 0.9,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 3.75,
+      "confidence_min": 0.5,
+      "auto_accepted": 5,
+      "auto_accept_precision": 0.6,
+      "review_share": 0.0
+    },
+    {
+      "composite_min": 3.75,
+      "confidence_min": 0.6,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 3.75,
+      "confidence_min": 0.7,
+      "auto_accepted": 3,
+      "auto_accept_precision": 0.667,
+      "review_share": 0.2
+    },
+    {
+      "composite_min": 3.75,
+      "confidence_min": 0.8,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 3.75,
+      "confidence_min": 0.9,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 4.0,
+      "confidence_min": 0.5,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 4.0,
+      "confidence_min": 0.6,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 4.0,
+      "confidence_min": 0.7,
+      "auto_accepted": 3,
+      "auto_accept_precision": 0.667,
+      "review_share": 0.2
+    },
+    {
+      "composite_min": 4.0,
+      "confidence_min": 0.8,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 4.0,
+      "confidence_min": 0.9,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 4.25,
+      "confidence_min": 0.5,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 4.25,
+      "confidence_min": 0.6,
+      "auto_accepted": 4,
+      "auto_accept_precision": 0.75,
+      "review_share": 0.1
+    },
+    {
+      "composite_min": 4.25,
+      "confidence_min": 0.7,
+      "auto_accepted": 3,
+      "auto_accept_precision": 0.667,
+      "review_share": 0.2
+    },
+    {
+      "composite_min": 4.25,
+      "confidence_min": 0.8,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    },
+    {
+      "composite_min": 4.25,
+      "confidence_min": 0.9,
+      "auto_accepted": 0,
+      "auto_accept_precision": null,
+      "review_share": 0.5
+    }
+  ]
+}

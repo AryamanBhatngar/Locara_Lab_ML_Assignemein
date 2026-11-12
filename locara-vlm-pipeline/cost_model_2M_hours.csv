@@ -1,0 +1,76 @@
+section,item,monthly_usd,six_month_usd,basis
+inference,Gemini 2.5 Flash (standard),62401.68,374410.08,4129 in + 450 out tokens/video at $0.30/$2.50 per 1M
+inference,Gemini 2.5 Flash (batch),31200.84,187205.04,batch halves rates
+inference,Gemini 2.5 Flash-Lite (batch),7826.28,46957.68,"$0.10/$0.40 per 1M, batch"
+inference,GPT-4o (standard),388938.0,2333628.0,4093 in + 450 out tokens/video at $2.50/$10 per 1M
+inference,GPT-4o (batch),194469.0,1166814.0,Batch API 50% (verify)
+inference,"Self-hosted Qwen2.5-VL-7B, 15 x g6.2xlarge",9219.24,55315.46,"1.0 video/s/GPU assumed, 70% utilisation, 70% spot at $0.842/h blended"
+storage,Scores + keyframes on S3 (6-month average),582.31,3493.84,"results 58 GB/mo Standard; keyframes 9504 GB/mo, Standard 1 month then Glacier IR"
+storage (context),Raw video kept in S3 Standard (month-6 run-rate),136620.0,478170.0,990 TB added per month at ~50 MB/min; owned by the capture pipeline; six_month_usd is the cumulative bill; a lifecycle to Glacier IR after 30 days cuts it ~80%
+orchestration,SQS,31.68,190.08,3 requests/video at $0.40 per 1M
+orchestration,CPU pre-processing (decode + telemetry),733.33,4400.0,"1.5 vCPU-s/video at $0.04/vCPU-h, 60% busy"
+orchestration,RDS Postgres + Redis,1500.0,9000.0,assumption; replace with AWS calculator quote
+human review,"264,000 videos/day",198000.0,1188000.0,"30 s/video, 2,200 h/day at $3.0/h"
+TOTAL,Total with Gemini Flash batch (excl. raw video),232048.16,1392288.96,sum of the rows above
+TOTAL,Total with GPT-4o (excl. raw video),589785.32,3538711.92,sum of the rows above
+TOTAL,Total with self-hosted Qwen (excl. raw video),210066.56,1260399.38,sum of the rows above
+
+lever,10% improvement in,monthly_saving_usd,,self-hosted scenario
+lever,review_seconds_per_video,19800.0,,
+lever,annotator_usd_hr,19800.0,,
+lever,review_share,19800.0,,
+lever,videos_per_gpu_sec,614.62,,
+lever,keyframe_kb_per_video,31.36,,
+
+sensitivity,review_seconds x annotator_usd_hr,annotator_monthly_usd,,
+sensitivity,30s @ $2/h,132000.0,,
+sensitivity,30s @ $3/h,198000.0,,
+sensitivity,30s @ $5/h,330000.0,,
+sensitivity,60s @ $2/h,264000.0,,
+sensitivity,60s @ $3/h,396000.0,,
+sensitivity,60s @ $5/h,660000.0,,
+sensitivity,120s @ $2/h,528000.0,,
+sensitivity,120s @ $3/h,792000.0,,
+sensitivity,120s @ $5/h,1320000.0,,
+sensitivity,GPU throughput 0.25 video/s,36262.36,,59 GPUs
+sensitivity,GPU throughput 0.5 video/s,18438.49,,30 GPUs
+sensitivity,GPU throughput 1.0 video/s,9219.24,,15 GPUs
+sensitivity,GPU throughput 2.0 video/s,4916.93,,8 GPUs
+
+assumption,videos_per_day,880000,,
+assumption,frames_per_video,12,,
+assumption,review_share,0.3,,
+assumption,days_per_month,30,,
+assumption,months,6,,
+assumption,gemini_tokens_per_frame,258,,
+assumption,openai_tokens_per_frame,255,,
+assumption,prompt_text_tokens,1033,,
+assumption,output_tokens,450,,
+assumption,gemini_flash_in,0.3,,
+assumption,gemini_flash_out,2.5,,
+assumption,gemini_flash_lite_in,0.1,,
+assumption,gemini_flash_lite_out,0.4,,
+assumption,gpt4o_in,2.5,,
+assumption,gpt4o_out,10.0,,
+assumption,batch_discount,0.5,,
+assumption,g6_on_demand_hr,0.9776,,
+assumption,g6_spot_hr,0.7838,,
+assumption,spot_share,0.7,,
+assumption,videos_per_gpu_sec,1.0,,
+assumption,gpu_utilisation,0.7,,
+assumption,min_gpus_always_on,2,,
+assumption,hours_per_month,730,,
+assumption,s3_standard_gb,0.023,,
+assumption,s3_glacier_ir_gb,0.004,,
+assumption,s3_deep_archive_gb,0.00099,,
+assumption,s3_put_per_1k,0.005,,
+assumption,result_kb_per_video,2.2,,
+assumption,keyframe_kb_per_video,360.0,,
+assumption,raw_video_mb_per_sec,0.8333333333333334,,
+assumption,sqs_per_million,0.4,,
+assumption,sqs_requests_per_video,3,,
+assumption,cpu_seconds_per_video,1.5,,
+assumption,cpu_vcpu_hr,0.04,,
+assumption,db_cache_month,1500.0,,
+assumption,review_seconds_per_video,30,,
+assumption,annotator_usd_hr,3.0,,

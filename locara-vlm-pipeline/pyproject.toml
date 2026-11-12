@@ -1,0 +1,8 @@
+[project]
+name = "locara-vlm-pipeline"
+version = "0.1.0"
+description = "VLM-assisted quality control and pre-annotation for ego-centric robotics video"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
